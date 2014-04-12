@@ -36,8 +36,9 @@
 
 <div id="index">
 
-  {% capture my-include %}{% include _home_content.md %}{% endcapture %}
-  {{ my-include | markdownify }}
+
+  {% capture homecontent %}{% include _home_content.md %}{% endcapture %}
+  {{ homecontent | markdownify }}
 
 
 </div><!-- /#index -->
